@@ -1,0 +1,133 @@
+.cardLayout{
+    display: grid;
+    gap: 30px;
+    place-content: space-between;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+}
+
+.cardLayout .card{
+    border-top: 3px solid #1E40AF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 6px 15px 0 rgba( 31, 38, 135, 0.37 );
+    position: relative;
+}
+
+.cardLayout .card span{
+    border-radius: 10px;
+    background-color: #1E40AF;
+    padding: calc(0.3rem + 0.4vw );    
+    position: absolute;
+    top: -20px;
+    width: 40px;
+    height: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardLayout .card img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(200%) contrast(101%);
+}
+
+.cardLayout .card h4{
+    font-size: smaller;
+    color: var(--facebook-blue);
+}
+
+.cardLayout .card .selectTag{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 2px 0 10px;
+}
+
+.cardLayout .card > h4{
+    margin: 2px 0 10px;
+}
+
+.cardLayout .card h1{
+    color: #1E40AF;
+}
+
+.summary{
+    margin: 0 auto;
+    gap: 50px;
+    margin-top: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.summaryCard{
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 6px 15px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.summaryCard h4{
+    margin-bottom: 0.5em;
+    font-size: calc(0.6rem + 0.5vw);
+    color: #1E40AF;
+    text-transform: capitalize;
+}
+
+.summaryCard h4 img{
+    margin-left: 5px;
+    margin-bottom: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+.summaryCard:first-child > h1{
+    color: #06D406;
+}
+.summaryCard:nth-child(2) > h1{
+    color: #F90A0A;
+}
+
+@media (max-width: 769px){
+    .cardLayout{
+        display: grid;
+        width: 90%;
+        gap: 30px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, minmax(100px, 250px));
+        margin-bottom: 4em;
+    }
+
+    .cardLayout .card h1{
+        font-size: calc(1.5em + 0.9vw);
+    }
+
+    .summary{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .summary > div:nth-child(2){
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, minmax(100px, 200px));
+        place-content: center;
+    }
+
+    .summary div:nth-child(2) .summaryCard:first-child{
+        margin-bottom: 0;
+     }
+
+    .summaryCard h1{
+        font-size: calc(1.2rem + 1vw);
+    }
+
+    .summaryCard span > img{
+        width: 10px;
+        height: 10px;
+    }
+
+}

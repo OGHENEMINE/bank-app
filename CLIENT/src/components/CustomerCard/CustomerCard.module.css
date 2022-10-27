@@ -1,0 +1,13 @@
+.customerCard{
+    padding: 20px;
+    color: #1E40AF;
+    box-shadow: 2px 3px 5px 1px rgba( 31, 38, 135, 0.37 );
+}
+
+.customerCard p:first-child{
+    font-size: small;
+}
+
+.customerCard p{
+    font-size: smaller;
+}

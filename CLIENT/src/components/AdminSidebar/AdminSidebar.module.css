@@ -1,0 +1,192 @@
+.AdminNav .active{
+    color: #fff;
+    background-color: #5e78cf;
+}
+
+.active img{    
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(150%) contrast(101%);
+}
+
+.hide{
+   display: none;
+}   
+
+.AdminNav{
+    background-color: #1E40AF;
+    padding: 1em 0.5em;
+    box-shadow: 3px 0px 5px 2px rgba( 31, 38, 135, 0.37 );
+    width: calc(8.5rem + 0.5vw);
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+.displayToggle{
+    width: calc(2.5rem + 0.8vw);
+    text-align: center;
+}
+
+.displayToggle li span{
+    display: none;
+}
+
+.displayToggle li img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin: 0;
+}
+
+.displayToggle .toggle{
+    position: absolute;
+    top: 5px;
+    right: 0; 
+}
+
+.displayToggle a:hover .tooltip{
+  visibility: visible;
+  transition-delay: 0.25s;
+}
+
+.displayToggle .tooltip{
+    position: absolute;
+    display: inline-block;
+    visibility: hidden;
+    top: -13px;
+    left:  40px;
+    font-size: smaller;
+    padding: 5px 0;
+    color: #fff;
+    background-color: #000;
+    width: 115px;
+    transition: all 0.2s ease;
+    margin-left: 4px;
+}
+
+.displayToggle .label{
+    display: none;
+}
+
+.displayToggle .AdminNavItems{
+    width: 40px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.displayToggle a{
+    position: relative;
+    height: 35px;
+}
+
+.displayToggle .logOut span{
+    display: block;
+    font-size: smaller;  
+}
+
+.AdminNav .toggle:not(.display-Toggle .toggle){
+    position: absolute;
+    top: 4%;
+    right: 5%;
+}
+
+.AdminNavItems{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    width: 90%;
+    height: 60%;
+    color: #E0FCFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.AdminNavItems li img {
+    margin-right: 10px;
+}
+
+.AdminNavItems a{
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 5px;   
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 1px rgba( 31, 38, 135, 0.37 );
+    color: #1E40AF;
+    font-size: small;
+}
+
+.tooltip{
+    display: none;
+}
+
+.AdminNav .logOut{
+    color: #fff;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size: smaller;
+    width: 100%;
+    
+}
+
+.AdminNav .logOut img{
+    margin-right: 5px;
+}
+
+@media (max-width: 769px){
+   .AdminNav{
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 40%;
+    display: block;
+    transition: all 300ms ease-in-out;
+   }
+
+   .AdminNavItems a{
+    padding: 8px 0 8px 5px;   
+    font-size: smaller;
+   }
+
+   .displayToggle{
+      width: auto;
+      height: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 92%;
+   }
+
+   .displayToggle .AdminNavItems{
+    display: none;
+   }
+
+   .displayToggle .toggle{
+    width: 25px;
+    top: 15px !important;
+    left: 10px; 
+} 
+
+.displayToggle .logOut{
+    position: absolute;
+    width: 50px;
+    top: 6px;
+    left: 90%;
+}
+
+}
+
+
+
+
+

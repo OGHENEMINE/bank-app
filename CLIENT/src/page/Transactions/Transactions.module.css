@@ -1,0 +1,40 @@
+.transactions > h1{
+    margin-bottom: 25px;
+    color: #1E40AF;
+    font-size: calc(1.5rem + 0.7vw);
+}
+
+.transactions > div{
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.5em;
+}
+
+.transactions > div button{
+    background-color: #1E40AF;
+    border: 2px solid #1E40AF;
+    padding: 2px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+}
+
+.transactions input[type = "search"]{
+    width: 200px;
+    padding: 3px 5px;
+    outline: none;
+    border-right: none;
+    border: 2px solid #4267B2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.transactions form{
+    display: flex;
+}
+
+@media (max-width: 769px){
+    .transactions{
+        margin-left: calc(0.7rem + 0.5vw);
+    }
+}

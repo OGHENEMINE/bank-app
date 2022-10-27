@@ -1,0 +1,68 @@
+.authLayout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(23rem + 30vw);
+    height: 95%;
+    font-size: small;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 5px 2px rgba( 31, 38, 135, 0.37 );
+}
+
+.authLayout > div:first-child{
+    background-image: linear-gradient(125deg, #1e40af6e, rgba(0, 0, 0, 0.638) ),
+                    url('../../assets/Exchange.jpg');
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 calc(1rem + 0.5vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.authLayout > div:first-child h2{
+    color: #1e40af;
+    font-weight: 900;
+    margin-bottom: 45px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.648);
+}
+
+.authLayout > div:first-child span{
+    background-color: #1e40af;
+    border-radius: 20px;
+    width: 180px;
+    padding: 12px 0;
+    margin: 0 auto 65px;
+    text-shadow: 2px 1px 5px #000;
+}
+
+@media (max-width: 769px) {
+    .authLayout{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+        width: 80%;
+        height: 100%;
+        margin: 10px auto 0;
+        box-shadow: 1px 3px 5px 2px rgba( 31, 38, 135, 0.37 );
+    }
+
+    .authLayout > div:first-child{
+        padding: 30px calc(1rem + 0.5vw);
+    }
+
+    .authLayout > div:first-child h2{
+        margin-bottom: 35px;
+    }
+
+    .authLayout > div:first-child span{
+        width: 150px;
+        padding: 10px 0;
+        margin: 0 auto 50px;
+    }
+}

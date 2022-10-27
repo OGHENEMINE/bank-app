@@ -1,0 +1,30 @@
+.customerLayout{
+    display: flex;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.customerLayout > div{
+    width: calc(55rem + 10vw);
+    margin-left: 180px;
+    background-color: #fff;
+}
+
+@media (max-width: 1200px){
+    .customerLayout > div{
+        width: 100%;
+        margin-left: 160px;
+    }
+}
+
+@media (max-width: 769px){
+    .customerLayout > div{
+        width: 100%;
+        margin: 0;
+    }
+
+    .customerLayout .blur{
+         -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+          filter: blur(3px);
+    }
+}

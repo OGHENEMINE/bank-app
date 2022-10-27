@@ -1,0 +1,11 @@
+.service{
+    background-color: #1e40af35;
+    padding: 15px 5px;
+    border-radius: 5px;
+    font-size: calc(0.4rem + 0.4vw);
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    box-shadow: -2px 3px 10px 1px rgba( 31, 38, 135, 0.37 );
+    color: #1e40af;
+}

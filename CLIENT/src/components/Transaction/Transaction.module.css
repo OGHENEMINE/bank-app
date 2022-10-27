@@ -1,0 +1,16 @@
+.transaction{
+    display: flex;
+    color: #1e40af;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: calc(0.4rem + 0.5vw) 20px;
+    box-shadow: 2px 3px 5px 1px rgba( 31, 38, 135, 0.37 );
+    position: relative;
+    font-size: smaller;
+}
+
+.transaction p:first-child{
+    font-size: small;
+}
+

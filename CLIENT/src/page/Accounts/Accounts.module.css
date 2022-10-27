@@ -1,0 +1,54 @@
+.accounts > h1{
+    margin-bottom: 20px;
+    color: #1E40AF;
+    font-size: calc(1.5rem + 0.7vw);
+}
+
+.accounts > div{
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.5em;
+}
+
+.accounts > div button{
+    background-color: #1E40AF;
+    border: 2px solid #1E40AF;
+    padding: 3px 10px;
+    font-size: calc(0.5rem + 0.5vw);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+}
+
+.accounts input[type = "search"]{
+    width: 200px;
+    font-size: calc(0.5rem + 0.5vw);
+    padding: 3px 5px;
+    outline: none;
+    border-right: none;
+    border: 2px solid #1E40AF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.accounts form{
+    display: flex;
+}
+
+@media (max-width: 769px){
+    .accounts{
+        margin-left: calc(0.7rem + 0.5vw);
+    }
+
+    .accounts input[type = "search"]{
+        width: 150px; 
+        padding: 5px 5px;       
+        font-size: calc(0.6rem + 0.5vw);
+    }
+
+    .accounts > div button{
+        text-align: center;
+        padding: 5px 10px;
+        font-size: calc(0.5rem + 0.5vw);
+    }
+}

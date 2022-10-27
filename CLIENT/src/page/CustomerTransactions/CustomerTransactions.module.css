@@ -1,0 +1,48 @@
+.customerTransactions{
+    position: relative;
+    margin: 0 calc(1rem + 0.7vw);
+    color: #1e40af;
+}
+
+.customerTransactions div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.customerTransactions > :first-child p{
+    color: #1e40af;
+    background-color: #1e40af35;
+    padding: 8px;
+    margin: 1.5em 0 1em;
+    font-size: smaller;
+}
+
+.transactionContainer{
+    max-height: 350px;
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em 0.5em 0;
+    border: 1px solid rgba(204, 204, 204, 0.824);
+    height: 100%;
+    font-size: small;
+}
+
+.input{
+    position: absolute;
+    color: #fff;
+    padding: 5px;
+    background-color: #1e40af;
+    top: 134px;
+    right: 0;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
